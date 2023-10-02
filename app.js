@@ -2,7 +2,7 @@ import bodyParser from 'body-parser';
 import express from 'express';
 
 const app = express();
-const port = 3000;
+const port = process.env.port || 3000;
 const todolist = [];
 const worklist = [];
 var today = '';
